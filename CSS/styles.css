@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700&family=Yellowtail&display=swap");
+
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-dark: #274c5b;
+  --color-primary: #7550fe;
+
+  --body-font: "Open Sans", sans-serif;
+  --sans-serif: "Roboto", sans-serif;
+  --cursive: "Yellowtail", cursive;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--sans-serif);
+}
+header > nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+#container {
+  height: 100%;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+header {
+  display: flex;
+  padding: 10px 10px;
+}
+header {
+  max-width: 1680px;
+}
+.margin-right {
+  margin-right: 10px;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+header > .logo-image {
+  object-fit: cover;
+}
+header > .user-info {
+  margin-left: auto;
+}
+
+header > div .round-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+}
+header > div > button .info-image {
+  object-fit: cover;
+  height: 15px;
+  width: 15px;
+}
+
+/* Hero Section */
+
+.content {
+  min-height: 50vh;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding-inline: 120px;
+}
+.hero {
+  background-image: url("../assets/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  width: 100%;
+}
+.hero-content {
+  flex-direction: column;
+  width: 40%;
+}
+.hero-image {
+  object-fit: cover;
+}
